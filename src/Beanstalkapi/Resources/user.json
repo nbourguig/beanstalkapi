@@ -1,0 +1,62 @@
+{
+    "operations": {
+        "findAll": {
+            "httpMethod": "GET",
+            "uri": "users.json",
+            "summary": "Find All Users",
+            "parameters": {
+                "page": {
+                    "location": "query",
+                    "type": "integer",
+                    "minimum": 1,
+                    "required": false
+                },
+                "per_page": {
+                    "location": "query",
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 50,
+                    "required": false
+                }
+            }
+        },
+
+        "find": {
+            "httpMethod": "GET",
+            "uri": "users/{user_id}.json",
+            "summary": "Find user by id",
+            "parameters": {
+                "user_id": {
+                    "location": "uri",
+                    "type": "integer",
+                    "required": true
+                }
+            }
+        },
+
+        "me": {
+            "httpMethod": "GET",
+            "uri": "users/current.json",
+            "summary": "Find user by id",
+            "parameters": {
+                "user_id": {
+                    "location": "uri",
+                    "type": "string"
+                }
+            }
+        },
+
+        "create": {
+            "httpMethod": "POST",
+            "uri": "users.json",
+            "summary": "Create a user",
+            "parameters": {
+                "user": {
+                    "type": "string",
+                    "location": "postField",
+                    "required": true
+                }
+            }
+        }
+    }
+}

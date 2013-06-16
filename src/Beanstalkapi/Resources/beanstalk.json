@@ -1,0 +1,9 @@
+{
+    "name": "BeanstalkApi",
+    "apiVersion": "v1.0",
+    "baseUrl": "",
+    "description": "Beanstalkapp api http://api.beanstalkapp.com",
+    "includes":[
+        "user.json"
+    ]
+}

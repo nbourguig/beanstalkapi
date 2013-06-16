@@ -1,0 +1,11 @@
+{
+    "require": {
+        "justinrainbow/json-schema": "1.3.1",
+        "guzzle/guzzle": "3.6.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Beanstalkapi": "src/"
+        }
+    }
+}
